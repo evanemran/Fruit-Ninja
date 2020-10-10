@@ -63,6 +63,7 @@
     <Compile Include="Assets\Blade.cs" />
     <Compile Include="Assets\Fruit.cs" />
     <Compile Include="Assets\FruitSpawner.cs" />
+    <Compile Include="Assets\ScoreCard.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/Programming/UnityWorks/Fruit-Ninja/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

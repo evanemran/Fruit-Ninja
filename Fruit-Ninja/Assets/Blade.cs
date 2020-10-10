@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Blade : MonoBehaviour
 {
+    
     public GameObject bladeTrailprefab;
     public float minCuttingVelocity = .001f;
     bool isCutting = false;

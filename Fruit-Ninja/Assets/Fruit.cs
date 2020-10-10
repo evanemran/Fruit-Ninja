@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Fruit : MonoBehaviour
 {
-
     public GameObject fruitSliced;
     public float startForce = 15f;
 
@@ -22,8 +22,8 @@ public class Fruit : MonoBehaviour
         {
             Vector3 direction = (col.transform.position - transform.position).normalized;
             Quaternion rotation = Quaternion.LookRotation(direction);
-
             GameObject slicedFruit = Instantiate(fruitSliced, transform.position, rotation);
+            ScoreCard.scoreVal += 1;
             Destroy(slicedFruit, 3f);
             Destroy(gameObject);
         }
